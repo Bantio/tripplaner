@@ -6,16 +6,16 @@ const db = require('./db');
 
 
 
-var Hotel = db.define('hotel', {
+var Restaurant = db.define('restaurant', {
   name: {
     type: Sequelize.STRING
   },
-  num_stars: {
-    type: Sequelize.FLOAT
-  },
-  amenities: {
+  cuisine: {
     type: Sequelize.STRING
-}
+  },
+  price: {
+    type: Sequelize.INTEGER
+  }
 })
 
-module.exports = Hotel;
+module.exports = Restaurant;

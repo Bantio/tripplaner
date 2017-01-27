@@ -6,16 +6,13 @@ const db = require('./db');
 
 
 
-var Hotel = db.define('hotel', {
+var Activity = db.define('activity', {
   name: {
     type: Sequelize.STRING
   },
-  num_stars: {
-    type: Sequelize.FLOAT
-  },
-  amenities: {
+  age_range: {
     type: Sequelize.STRING
-}
+  }
 })
 
-module.exports = Hotel;
+module.exports = Activity;
